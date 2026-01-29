@@ -8,14 +8,14 @@ const Footer = () => {
     <div className="footer text-center py-5">
       <div className="mb-2 text-[14px]">
         &#x3c;&#47;&#x3e; with ❤️ by
-        <a href="https://DIVYANSH-675.github.io/3d-react-portfolio/" target="_blank" className="font-bold ml-1 hover:text-violet-500 transition-colors">
+        <a href="https://DIVYANSH-675.github.io/" target="_blank" className="font-bold ml-1 hover:text-violet-500 transition-colors">
           Divyansh Gupta
         </a>
       </div>
 
       <div className='flex justify-center flex-col items-center text-[12px] text-secondary'>
         <p>
-          &copy; 2024. All rights reserved.
+          &copy; 2026. All rights reserved.
         </p>
         <div className="mt-2 flex items-center gap-2">
           <span>No. of Visitors:</span>
