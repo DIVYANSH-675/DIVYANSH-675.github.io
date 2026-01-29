@@ -1,156 +1,57 @@
-# 3D React Portfolio
+# Divyang Gupta - 3D Developer Portfolio
 
+![Portfolio Banner](https://img.shields.io/badge/Status-Deployed-success?style=for-the-badge) ![React](https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB) ![Three.js](https://img.shields.io/badge/Three.js-black?style=for-the-badge&logo=three.js&logoColor=white) ![TailwindCSS](https://img.shields.io/badge/Tailwind_CSS-38B2AC?style=for-the-badge&logo=tailwind-css&logoColor=white)
 
-# [Personal Portfolio - 3D React Portfolio](https://DIVYANSH-675.github.io/3d-react-portfolio/)
-<b>Created a responsive react website using amazing features of CSS, HTML and Javascript framework React with 3D graphics and animations. I have used ThreeJS 3D Developer tools for this Portfolio.
+A modern, immersive 3D developer portfolio built with React, Three.js, and Tailwind CSS. It features a responsive design, interactive 3D elements, and a clean interface to showcase projects and skills.
 
-Implemented my own Portfolio as Website, Where I have added all my projects and experiences. I have hosted it with the help of github gh-pages. I keep on making changes accordingly.</b>
+**🔗 [View Live Portfolio](https://DIVYANSH-675.github.io/)**
 
-![3D Portfolio](https://github.com/DIVYANSH-675/3d-react-portfolio/blob/main/Images/1.png)
+## 🚀 Features
 
-## View Live Demo
-<pre><center><a href="https://DIVYANSH-675.github.io/3d-react-portfolio/"><b>https://DIVYANSH-675.github.io/3d-react-portfolio/</b></a></center></pre>
+- **Immersive 3D Hero Section**: Interactive desktop setup using Three.js and React Three Fiber.
+- **Modern Tech Stack**: Built with Vite, React, and Tailwind CSS for speed and styling.
+- **Responsive Design**: Optimized for all devices, from desktops to mobile phones.
+- **Seamless Animations**: Smooth transitions and interactive elements using Framer Motion.
+- **Contact Form**: Functional "Get in Touch" form powered by Web3Forms.
 
+## 🛠️ Tech Stack
 
-## Introduction
-The most impressive websites in the world use 3D graphics and animations to bring their content to life. See here how to build your own ThreeJS 3D Developer Portfolio today! 
- 
-In this project, you'll use these technologies:
-- **ThreeJS** -  an incredibly powerful 3D graphics library that enables you to render and animate captivating 3D models with ease.
-- **React Three Fiber** - a widely adopted library that seamlessly integrates ThreeJS into React, allowing you to create stunning 3D graphics while harnessing the full potential of React's capabilities.
-- **TailwindCSS** - a highly popular utility-first CSS styling framework that empowers you to craft visually stunning websites with minimal effort.
-- **Framer Motion** - the go-to library for adding captivating animations to your React websites, breathing life into your creations and making them truly stand out.
+- **Framework**: [React](https://reactjs.org/) (Vite)
+- **Styling**: [Tailwind CSS](https://tailwindcss.com/)
+- **3D Graphics**: [Three.js](https://threejs.org/) & [React Three Fiber](https://docs.pmnd.rs/react-three-fiber)
+- **Animations**: [Framer Motion](https://www.framer.com/motion/)
+- **Icons**: [React Icons](https://react-icons.github.io/react-icons/)
+- **Deployment**: [GitHub Pages](https://pages.github.com/)
 
-### This portfolio contains:
+## ⚙️ Installation & Setup
 
-- Load, customize, and create visually impressive 3D models and geometries. We'll also see to manipulate various lighting setups and understand how to position objects effectively within a 3D space.
-- Implement industry-standard best practices, making our code reusable and scalable through techniques like Higher Order Components (HOCs), enhancing the efficiency and maintainability of our projects.
-- Incorporate a functional email form on our website, allowing visitors to easily reach out to you, thus enhancing user engagement and interactivity.
-- Ensuring that our website exhibits optimal responsiveness across all devices, offering a seamless user experience. Additionally, you'll learn to optimize our site's performance using techniques such as Suspense and Preload.
-- Prepare to embark on an exciting journey that will transform you into a skilled ThreeJS 3D Developer, enabling you to create visually stunning and interactive web experiences that will leave a lasting impression on audience.
- 
- <hr>
-# Getting Started with Create React App
+1.  **Clone the repository**
+    ```bash
+    git clone https://github.com/DIVYANSH-675/DIVYANSH-675.github.io.git
+    cd DIVYANSH-675.github.io
+    ```
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+2.  **Install dependencies**
+    ```bash
+    npm install
+    ```
 
-### `npx create-react-app`
+3.  **Run the development server**
+    ```bash
+    npm run dev
+    ```
 
-To start with react app
+4.  **Build for production**
+    ```bash
+    npm run build
+    ```
 
-## Available Scripts
+## 📬 Contact
 
-In the project directory, you can run:
+- **Email**: [divyanshgupta0704@gmail.com](mailto:divyanshgupta0704@gmail.com)
+- **LinkedIn**: [Divyansh Gupta](https://www.linkedin.com/in/divyansh-gupta-b4396a207/)
+- **GitHub**: [DIVYANSH-675](https://github.com/DIVYANSH-675)
 
-### `npm start`
+---
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
-
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
-
-### `npm i node-sass`
-
-Node-sass is a library that provides binding for Node.js to LibSass, the C version of the popular stylesheet preprocessor, Sass.\
-See the section about [running tests](https://github.com/sass/node-sass) for more information.
-
-### `npm i ityped`
-
-Enter in any string, and watch it type at the speed you've set, backspace what it's typed,\
-and begin a new sentence for however many strings you've set.
-
-See the section about [deployment](https://unpkg.com/ityped@1.0.3) for more information.
-
-### `npm i @material-ui/core`
-### `npm i @material-ui/core`
-
-React components for faster and easier web development. Build your own design system, or start with Material Design.
-
-See the section about [MUI Documentation](https://mui.com/) for more information.
-
-
-### `npm run build`
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-Other libraries and dependencies which needs to be installed before working on the project
-
-### `npm create vite@latest ./ -- --template react`
-### `npm install -D tailwindcss`
-### `npx tailwindcss init`
-### `npm install --legacy-peer-deps @react-three/fiber @react-three/drei maath react-tilt react-vertical-timeline-component @emailjs/browser framer-motion react-router-dom`
-### `npm run dev`
-
-### `npm install --legacy-peer-deps -D postcss autoprefixer`
-### `npx tailwindcss init -p`
-### `npm install --save-dev sass`
-### `npm i ityped`
-### `npm install --legacy-peer-deps three`
-
-
-### `npm install react-icons --save`
-### `npm install --legacy-peer-deps react-parallax-tilt`
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-<hr>
-
-## [SnapShots in Laptop View](https://DIVYANSH-675.github.io/3d-react-portfolio/)
-
-![3D Portfolio Laptop](https://github.com/DIVYANSH-675/3d-react-portfolio/blob/main/Images/1.png)
-
-![3D Portfolio Laptop](https://github.com/DIVYANSH-675/3d-react-portfolio/blob/main/Images/2.png)
-
-![3D Portfolio Laptop](https://github.com/DIVYANSH-675/3d-react-portfolio/blob/main/Images/3.png)
-
-![3D Portfolio Laptop](https://github.com/DIVYANSH-675/3d-react-portfolio/blob/main/Images/4.png)
-
-![3D Portfolio Laptop](https://github.com/DIVYANSH-675/3d-react-portfolio/blob/main/Images/5.png)
-
-![3D Portfolio Laptop](https://github.com/DIVYANSH-675/3d-react-portfolio/blob/main/Images/6.png)
-
-<hr>
-
-## [SnapShots in Mobile View](https://DIVYANSH-675.github.io/3d-react-portfolio/)
-
-<div align="center">
-<img src="https://github.com/DIVYANSH-675/3d-react-portfolio/blob/main/Images/p1.jpg" width="250px" height="400"/>
-
-<img src="https://github.com/DIVYANSH-675/3d-react-portfolio/blob/main/Images/p2.jpg" width="250px" height="400"/>
-
-<img src="https://github.com/DIVYANSH-675/3d-react-portfolio/blob/main/Images/p3.jpg" width="250px" height="400"/>
-</div>
-<br>
-
-<div align="center">
-<img src="https://github.com/DIVYANSH-675/3d-react-portfolio/blob/main/Images/p4.png" width="250px" height="400"/>
-
-<img src="https://github.com/DIVYANSH-675/3d-react-portfolio/blob/main/Images/p5.png" width="250px" height="400"/>
-
-<img src="https://github.com/DIVYANSH-675/3d-react-portfolio/blob/main/Images/p6.png" width="250px" height="400"/>
-</div>  
-
-### Connect with me:
-
-[<img align="left" alt="codeSTACKr.com" width="22px" src="https://img.icons8.com/?size=512&id=n9d0Hm43JCPK&format=png" />][website]
-[<img align="left" alt="codeSTACKr | Twitter" width="22px" src="https://img.icons8.com/fluency/48/twitter.png" />][twitter]
-[<img align="left" alt="codeSTACKr | LinkedIn" width="22px" src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/linked-in-alt.svg" />][linkedin]
-[<img align="left" alt="codeSTACKr | Instagram" width="22px" src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/instagram.svg" />][instagram]
-
-<br />
-
-[website]: https://DIVYANSH-675.github.io/3d-react-portfolio/
-[twitter]: https://twitter.com/CodeShinchan
-[instagram]: https://www.instagram.com/___divyansh__gupta___/
-[linkedin]: https://www.linkedin.com/in/divyansh-gupta-b4396a207/
+&copy; 2026 Divyang Gupta. All rights reserved.
