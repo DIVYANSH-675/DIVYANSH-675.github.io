@@ -1,53 +1,50 @@
-@import "../global.scss";
+@use "../global.scss" as *;
 @import url('https://fonts.googleapis.com/css2?family=Kalam:wght@700&display=swap');
 
-.ityped-cursor
-{
+.ityped-cursor {
     animation: blink 2s infinite;
 }
-@keyframes blink 
-{   
-    50%
-    {
+
+@keyframes blink {
+    50% {
         opacity: 1;
     }
-    100%
-    {
+
+    100% {
         opacity: 0;
     }
-    
+
 }
 
-.head1
-{
+.head1 {
     top: 80px;
-    .head2
-    {
+    z-index: 3;
+
+    .head2 {
         line-height: 95px;
-        @include mobile4
-        {
+
+        @include mobile4 {
             line-height: 70px;
         }
-        h3 span{
-            @include mobile4
-        {
-            font-size: 20px;
-        }
-            
+
+        h3 span {
+            @include mobile4 {
+                font-size: 20px;
+            }
+
         }
 
-        .link1
-        {
+        .link1 {
             line-height: 40px;
-            background: rgba(0,0,0,0.3);
+            background: rgba(0, 0, 0, 0.3);
             width: max-content;
             display: block;
             display: flex;
             z-index: 2;
             gap: 0.8rem;
             border-radius: 3rem;
-        
-            a{
+
+            a {
                 background: transparent;
                 padding: 0.9rem;
                 border-radius: 50%;
@@ -57,40 +54,56 @@
             }
         }
     }
-    .name
-    {
+
+    .name {
         font-family: 'Kalam', cursive;
         font-weight: 900;
     }
 }
 
+.hero-canvas {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    height: 100%;
+    z-index: 1;
 
-.imgcontainer1
-{
+    canvas {
+        width: 100% !important;
+        height: 100% !important;
+        display: block;
+    }
+}
+
+
+.imgcontainer1 {
     right: 4rem;
     top: 6rem;
-    width: 300px;
-    height: 300px;
-    border-radius: 40%;
+    z-index: 2;
+    width: 350px;
+    height: 350px;
+    border-radius: 50%;
     display: flex;
     align-items: center;
     justify-content: center;
 
-    @include mobile3
-    {
-        width: 200px;
-        height: 200px;
+    @include mobile3 {
+        width: 250px;
+        height: 250px;
         right: 5px;
     }
 
-    @include mobile2
-    {
+    @include mobile2 {
         display: none;
     }
 
-    img
-    {
-        height: 85%;
-        border-radius: 30%;
+    img {
+        width: 90%;
+        height: 90%;
+        object-fit: contain;
+        border-radius: 50%;
+        filter: drop-shadow(0 0 20px rgba(145, 94, 255, 0.4));
     }
 }

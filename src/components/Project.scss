@@ -1,57 +1,52 @@
 $maincolor: rgb(3, 3, 37);
 
-.project
-{
+.project {
     display: flex;
     flex-direction: column;
     align-items: center;
 
-    .project-box
-    {
-        height: 500px;
+    .project-box {
+        min-height: 520px;
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        gap: 0.75rem;
     }
 
-    ul
-    {
+    ul {
         margin: 10px;
         padding: 0;
         list-style: none;
         display: flex;
-        justify-content: center;  
+        justify-content: center;
 
-        li
-        {
+        li {
             border: solid 2px #00e9ff;
             border-radius: 10px;
-        }     
+        }
     }
-    .Box1
-    {
+
+    .Box1 {
         cursor: pointer;
-        .image
-        {
+
+        .image {
             z-index: 1;
         }
-        h3, .title
-        {
+
+        .title {
             opacity: 0;
         }
-        &:hover
-        {
+
+        &:hover {
             background-color: $maincolor;
-            .image
-            {
+
+            .image {
                 opacity: 0.2;
                 z-index: 0;
             }
-            h3
-            {
-                opacity: 1;
-                z-index: 1;
-                color: rgb(255, 255, 255);
-            }
-            .title
-            {
+
+            .title {
                 opacity: 1;
                 z-index: 1;
             }
@@ -59,8 +54,50 @@ $maincolor: rgb(3, 3, 37);
         }
     }
 
-    .box
-    {
-            gap: 1.75rem;
+    .box {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: stretch;
+        gap: 2rem;
+        width: 100%;
+        max-width: 1500px;
     }
+
+    .project-card {
+        flex: 0 1 340px;
+        max-width: 340px;
+        height: 100%;
+    }
+
+    .content {
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .content p {
+        line-height: 1.5;
+    }
+
+    .content-tags {
+        margin-top: auto;
+        color: #aaa6c3;
+    }
+
+    .tech-stack-line {
+        color: #e6e3f5;
+        display: inline-block;
+        padding: 6px 10px;
+        border-radius: 10px;
+        border: 1px solid rgba(0, 233, 255, 0.18);
+        background: linear-gradient(90deg, rgba(0, 233, 255, 0.10) 0%, rgba(128, 77, 238, 0.08) 100%);
+    }
+
+    .tech-stack-label {
+        color: #00e9ff;
+        font-weight: 600;
+        letter-spacing: 0.3px;
+    }
+
 }

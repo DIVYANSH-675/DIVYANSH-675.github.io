@@ -1,4 +1,4 @@
-@import "../global.scss";
+@use "../global.scss" as *;
 
 .my-skills 
 {
@@ -8,6 +8,9 @@
     align-items: center;
     justify-content: center;
     text-align: center;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
 
     .skill 
     {

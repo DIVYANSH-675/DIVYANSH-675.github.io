@@ -1,6 +1,5 @@
 import React, { useRef, useState } from "react";
 import { motion } from "framer-motion";
-import emailjs from "@emailjs/browser";
 
 import { styles } from "../styles";
 import { EarthCanvas } from "./canvas";
@@ -11,7 +10,7 @@ import { BsWhatsapp } from "react-icons/bs";
 import "./Contact.scss";
 
 const Contact = () => {
-  
+
   const formRef = useRef();
   const [form, setForm] = useState({
     name: "",
@@ -33,81 +32,49 @@ const Contact = () => {
 
   const handleSubmit = async (event) => {
     event.preventDefault();
-    const formData = new FormData(event.target);
     setLoading(true);
 
-    formData.append("access_key", "5f5b91cf-2fc6-4dc3-9cd2-dc8838e33f09");
+    try {
+      const formData = new FormData(event.target);
+      formData.append(
+        "access_key",
+        import.meta.env.VITE_WEB3FORMS_KEY ||
+        "69737738-160b-4171-a7c0-18d04e986a2a"
+      );
 
-    const object = Object.fromEntries(formData);
-    const json = JSON.stringify(object);
+      const payload = Object.fromEntries(formData);
+      const res = await fetch("https://api.web3forms.com/submit", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+          Accept: "application/json",
+        },
+        body: JSON.stringify(payload),
+      });
 
-    const res = await fetch("https://api.web3forms.com/submit", {
-      method: "POST",
-      headers: {
-        "Content-Type": "application/json",
-        Accept: "application/json"
-      },
-      body: json
-    }).then(
-      () => {
-        setLoading(false);
-        alert("Thank you. I will get back to you as soon as possible.");
+      const data = await res.json();
 
-        setForm({
-          name: "",
-          email: "",
-          message: "",
-        });
-      },
-      (error) => {
-        setLoading(false);
-        console.error(error);
-
-        alert("Ahh, something went wrong. Please try again.");
+      if (!res.ok || !data.success) {
+        throw new Error(
+          data?.message || "Ahh, something went wrong. Please try again."
+        );
       }
-    );
 
-    if (res.success) {
-      console.log("Success", res);
+      alert("Thank you. I will get back to you as soon as possible.");
+      setForm({
+        name: "",
+        email: "",
+        message: "",
+      });
+    } catch (error) {
+      console.error(error);
+      alert(
+        error?.message || "Ahh, something went wrong. Please try again."
+      );
+    } finally {
+      setLoading(false);
     }
   };
-
-  // const handleSubmit = (e) => {
-  //   e.preventDefault();
-  //   setLoading(true);
-
-  //   emailjs
-  //     .send(
-  //       'service_6y5vft7',
-  //       'template_5g175sf',
-  //       {
-  //         from_name: form.name,
-  //         to_name: "Aarti Rathi",
-  //         from_email: form.email,
-  //         to_email: "aarti.rathi1710@gmail.com",
-  //         message: form.message,
-  //       },
-  //       'FMQ4a1hK5NSAkumfj',
-  //     )
-  //     .then(
-  //       () => {
-  //         setLoading(false);
-  //         alert("Thank you. I will get back to you as soon as possible.");
-
-  //         setForm({
-  //           name: "",
-  //           email: "",
-  //           message: "",
-  //         });
-  //       },
-  //       (error) => {
-  //         setLoading(false);
-  //         console.error(error);
-
-  //         alert("Ahh, something went wrong. Please try again.");
-  //       }
-  //     );
-  // };
 
   return (
     <div
@@ -166,7 +133,7 @@ const Contact = () => {
             />
           </label>
 
-          
+
           <button
             type='submit'
             className='bg-tertiary py-3 px-5 rounded-xl outline-none w-fit text-white font-bold shadow-md shadow-primary'
@@ -178,12 +145,12 @@ const Contact = () => {
         <div className="mt-5 contact__options">
           <article className="contact__option">
             <MdEmail />
-            <a href="mailto:aarti.rathi1710@gmail.com" target="_blank" className="blue-text-gradient">aarti.rathi1710@gmail.com</a>
+            <a href="mailto:divyanshgupta0704@gmail.com" target="_blank" className="blue-text-gradient">divyanshgupta0704@gmail.com</a>
           </article>
           <article className="contact__option">
             <BsWhatsapp />
-            <a href="https://api.whatsapp.com/send/?phone=917040031669&text&app_absent=0&lang=en" target="_blank" className="blue-text-gradient">
-              +91 7040031669
+            <a href="https://api.whatsapp.com/send/?phone=916391133540&text&app_absent=0&lang=en" target="_blank" className="blue-text-gradient">
+              +91 6391133540
             </a>
           </article>
         </div>

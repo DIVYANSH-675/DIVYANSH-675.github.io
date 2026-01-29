@@ -43,7 +43,7 @@ const Navbar = () => {
         >
           <img src={logo} alt='logo' className='w-9 h-9 object-contain logo' />
           <p className='sm:block text-white text-[18px] font-bold cursor-pointer flex '>
-          aarti.rathi
+          Divyansh Gupta
           </p>
         </Link>
 
@@ -52,7 +52,7 @@ const Navbar = () => {
               className={`top2 ${"text-secondary"
               } hover:text-white text-[15px] font-medium cursor-pointer`}
             >
-              <a href="https://drive.google.com/drive/folders/13YGuvdkXQdyFzfuJd3YdUaG99dhCPz22?pli=1" target="_blank">Resume</a>
+              <a href="https://drive.google.com/drive/folders/1h6ZmL85thIKC_vnMWgSXk47GG-CjZXN8?usp=sharing" target="_blank">Resume</a>
           </div>
         </div>
       </div>

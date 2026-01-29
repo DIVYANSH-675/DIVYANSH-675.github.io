@@ -18,33 +18,34 @@ const FeedbackCard = ({
 }) => (
   <motion.div
     variants={fadeIn("", "spring", index * 0.5, 0.75)}
-    className='Box2 p-5 rounded-3xl xs:w-[320px] w-full'
+    className='bg-black p-5 rounded-2xl sm:w-[360px] w-full border border-white/[0.05] shadow-card'
   >
-      <div className='mt-7 flex flex-col justify-between items-center gap-1'>
-        <img
-          src={image}
-          alt={`feedback_by-${name}`}
-          width="80" height="80"
-          className='rounded-full object-cover'
-        />
-        <div className='mt-3 flex-1 flex flex-col'>
-          <p className='text-center text-white font-medium text-[16px]'>
-            <span className='text-center blue-text-gradient'>{name}</span> 
-          </p>
-          <p className='text-center mt-1 text-secondary text-[12px]'>
-            {year}
-          </p>
-        </div>
-
-      </div>
-
-    <p className='text-white font-black text-[48px]'>"</p>
+    <div className='relative w-full h-[200px] bg-white/[0.05] rounded-xl flex justify-center items-center overflow-hidden mb-5'>
+      <img
+        src={image}
+        alt={`logo-${name}`}
+        className='w-[80%] h-[80%] object-contain'
+      />
+    </div>
 
     <div className='mt-1'>
-      <p className='text-center text-white tracking-wider text-[18px]'>{degree}</p>
-      <p className='mt-3 text-center pink-text-gradient'>{branch}</p>
-      <p className='mt-3 text-center green-text-gradient'>{marks}</p>
+      <h3 className='text-white font-bold text-[20px] leading-[30px]'>{name}</h3>
+      <p className='mt-1 text-secondary text-[14px]'>{year}</p>
 
+      <div className='mt-4 flex flex-col gap-2'>
+        <p className='text-white font-medium text-[16px]'>
+          <span className='blue-text-gradient'>Degree:</span> {degree}
+        </p>
+        {branch && (
+          <p className='text-white font-medium text-[16px]'>
+            <span className='pink-text-gradient'>Stream:</span> {branch}
+          </p>
+        )}
+
+        <p className='text-white font-medium text-[16px]'>
+          <span className='green-text-gradient'>Result:</span> {marks}
+        </p>
+      </div>
     </div>
   </motion.div>
 );

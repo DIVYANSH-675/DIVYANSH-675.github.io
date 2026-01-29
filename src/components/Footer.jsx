@@ -4,20 +4,26 @@ import "./Footer.scss";
 
 const Footer = () => {
 
-    return (
-        <div className="footer text-center">
-        <p> 
-          &#x3c;&#47;&#x3e; with ❤️ by
-          <a href="https://shinchancode.github.io/3d-react-portfolio/" target="_blank">
-            {" "}
-            Aarti Rathi
-          </a>
-          😎
-        </p>
-        <p className="pink-text-gradient">No. of Visitors | <img className="visitcounter" src="https://hitwebcounter.com/counter/counter.php?page=9795911&style=0025&nbdigits=5&type=page&initCount=459" title="Counter Widget" Alt="Visit counter For Websites"   border="0" /></p>
-
+  return (
+    <div className="footer text-center py-5">
+      <div className="mb-2 text-[14px]">
+        &#x3c;&#47;&#x3e; with ❤️ by
+        <a href="https://DIVYANSH-675.github.io/3d-react-portfolio/" target="_blank" className="font-bold ml-1 hover:text-violet-500 transition-colors">
+          Divyansh Gupta
+        </a>
       </div>
-    );
-  };
-  
-  export default Footer;
+
+      <div className='flex justify-center flex-col items-center text-[12px] text-secondary'>
+        <p>
+          &copy; 2024. All rights reserved.
+        </p>
+        <div className="mt-2 flex items-center gap-2">
+          <span>No. of Visitors:</span>
+          <img src="https://hitwebcounter.com/counter/counter.php?page=16641214&style=0006&nbdigits=4&type=page&initCount=3000" title="Counter Widget" alt="Visit counter For Websites" border="0" />
+        </div>
+      </div>
+    </div>
+  );
+};
+
+export default Footer;

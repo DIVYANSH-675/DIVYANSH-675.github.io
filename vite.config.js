@@ -2,10 +2,22 @@ import { defineConfig } from 'vite'
 import react from '@vitejs/plugin-react'
 
 // https://vitejs.dev/config/
-export default defineConfig({
+export default defineConfig(({ mode }) => ({
   plugins: [react()],
-    build: {
-        chunkSizeWarningLimit: 100000000
+  css: {
+    preprocessorOptions: {
+      scss: {
+        logger: {
+          warn(message, options) {
+            if (options?.deprecation && message.includes("legacy JS API")) return;
+            console.warn(message);
+          },
+        },
+      },
     },
-    base: "/3d-react-portfolio",
-})
+  },
+  build: {
+    chunkSizeWarningLimit: 100000000,
+  },
+  base: mode === "production" ? "/divyansh-portfolio/" : "/",
+}))

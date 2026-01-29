@@ -1,15 +1,15 @@
 # 3D React Portfolio
 
 
-# [Personal Portfolio - 3D React Portfolio](https://shinchancode.github.io/3d-react-portfolio/)
+# [Personal Portfolio - 3D React Portfolio](https://DIVYANSH-675.github.io/3d-react-portfolio/)
 <b>Created a responsive react website using amazing features of CSS, HTML and Javascript framework React with 3D graphics and animations. I have used ThreeJS 3D Developer tools for this Portfolio.
 
 Implemented my own Portfolio as Website, Where I have added all my projects and experiences. I have hosted it with the help of github gh-pages. I keep on making changes accordingly.</b>
 
-![3D Portfolio](https://github.com/shinchancode/3d-react-portfolio/blob/main/Images/1.png)
+![3D Portfolio](https://github.com/DIVYANSH-675/3d-react-portfolio/blob/main/Images/1.png)
 
 ## View Live Demo
-<pre><center><a href="https://shinchancode.github.io/3d-react-portfolio/"><b>https://shinchancode.github.io/3d-react-portfolio/</b></a></center></pre>
+<pre><center><a href="https://DIVYANSH-675.github.io/3d-react-portfolio/"><b>https://DIVYANSH-675.github.io/3d-react-portfolio/</b></a></center></pre>
 
 
 ## Introduction
@@ -106,39 +106,39 @@ To learn React, check out the [React documentation](https://reactjs.org/).
 This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
 <hr>
 
-## [SnapShots in Laptop View](https://shinchancode.github.io/3d-react-portfolio/)
+## [SnapShots in Laptop View](https://DIVYANSH-675.github.io/3d-react-portfolio/)
 
-![3D Portfolio Laptop](https://github.com/shinchancode/3d-react-portfolio/blob/main/Images/1.png)
+![3D Portfolio Laptop](https://github.com/DIVYANSH-675/3d-react-portfolio/blob/main/Images/1.png)
 
-![3D Portfolio Laptop](https://github.com/shinchancode/3d-react-portfolio/blob/main/Images/2.png)
+![3D Portfolio Laptop](https://github.com/DIVYANSH-675/3d-react-portfolio/blob/main/Images/2.png)
 
-![3D Portfolio Laptop](https://github.com/shinchancode/3d-react-portfolio/blob/main/Images/3.png)
+![3D Portfolio Laptop](https://github.com/DIVYANSH-675/3d-react-portfolio/blob/main/Images/3.png)
 
-![3D Portfolio Laptop](https://github.com/shinchancode/3d-react-portfolio/blob/main/Images/4.png)
+![3D Portfolio Laptop](https://github.com/DIVYANSH-675/3d-react-portfolio/blob/main/Images/4.png)
 
-![3D Portfolio Laptop](https://github.com/shinchancode/3d-react-portfolio/blob/main/Images/5.png)
+![3D Portfolio Laptop](https://github.com/DIVYANSH-675/3d-react-portfolio/blob/main/Images/5.png)
 
-![3D Portfolio Laptop](https://github.com/shinchancode/3d-react-portfolio/blob/main/Images/6.png)
+![3D Portfolio Laptop](https://github.com/DIVYANSH-675/3d-react-portfolio/blob/main/Images/6.png)
 
 <hr>
 
-## [SnapShots in Mobile View](https://shinchancode.github.io/3d-react-portfolio/)
+## [SnapShots in Mobile View](https://DIVYANSH-675.github.io/3d-react-portfolio/)
 
 <div align="center">
-<img src="https://github.com/shinchancode/3d-react-portfolio/blob/main/Images/p1.jpg" width="250px" height="400"/>
+<img src="https://github.com/DIVYANSH-675/3d-react-portfolio/blob/main/Images/p1.jpg" width="250px" height="400"/>
 
-<img src="https://github.com/shinchancode/3d-react-portfolio/blob/main/Images/p2.jpg" width="250px" height="400"/>
+<img src="https://github.com/DIVYANSH-675/3d-react-portfolio/blob/main/Images/p2.jpg" width="250px" height="400"/>
 
-<img src="https://github.com/shinchancode/3d-react-portfolio/blob/main/Images/p3.jpg" width="250px" height="400"/>
+<img src="https://github.com/DIVYANSH-675/3d-react-portfolio/blob/main/Images/p3.jpg" width="250px" height="400"/>
 </div>
 <br>
 
 <div align="center">
-<img src="https://github.com/shinchancode/3d-react-portfolio/blob/main/Images/p4.png" width="250px" height="400"/>
+<img src="https://github.com/DIVYANSH-675/3d-react-portfolio/blob/main/Images/p4.png" width="250px" height="400"/>
 
-<img src="https://github.com/shinchancode/3d-react-portfolio/blob/main/Images/p5.png" width="250px" height="400"/>
+<img src="https://github.com/DIVYANSH-675/3d-react-portfolio/blob/main/Images/p5.png" width="250px" height="400"/>
 
-<img src="https://github.com/shinchancode/3d-react-portfolio/blob/main/Images/p6.png" width="250px" height="400"/>
+<img src="https://github.com/DIVYANSH-675/3d-react-portfolio/blob/main/Images/p6.png" width="250px" height="400"/>
 </div>  
 
 ### Connect with me:
@@ -150,7 +150,7 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/d
 
 <br />
 
-[website]: https://shinchancode.github.io/3d-react-portfolio/
+[website]: https://DIVYANSH-675.github.io/3d-react-portfolio/
 [twitter]: https://twitter.com/CodeShinchan
-[instagram]: https://www.instagram.com/aarti.rathiii
-[linkedin]: https://www.linkedin.com/in/aarti-rathi-a6031814b/
+[instagram]: https://www.instagram.com/___divyansh__gupta___/
+[linkedin]: https://www.linkedin.com/in/divyansh-gupta-b4396a207/
