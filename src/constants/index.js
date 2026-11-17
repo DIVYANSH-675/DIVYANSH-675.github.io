@@ -13,7 +13,7 @@ const profiles = [
     icon: github,
   },
   {
-    link: "https://www.linkedin.com/in/divyansh-gupta-214480252/",
+    link: "https://www.linkedin.com/in/divyansh-gupta-b4396a207/",
     icon: "https://img.icons8.com/color/344/linkedin.png",
   },
   {
@@ -123,6 +123,7 @@ const technologies = [
 ];
 
 const list = [
+  { id: "research", title: "Research Lab" },
   {
     id: "ai_ml",
     title: "AI & ML",
@@ -291,6 +292,27 @@ export const webProject = [
 ];
 
 export const otherProject = [
+{
+  "name": "SplitBill",
+  "description": "Tracks shared expenses, transfers, and balances with offline records, activity history, and PDF/XLSX exports. Available as an Android preview.",
+  "status": "Android preview",
+  "tags": [
+    {
+      "name": "TypeScript",
+      "color": "blue-text-gradient"
+    },
+    {
+      "name": "React",
+      "color": "green-text-gradient"
+    },
+    {
+      "name": "Android",
+      "color": "pink-text-gradient"
+    }
+  ],
+  "image": "/project/splitbill.svg",
+  "source_code_link": "https://github.com/DIVYANSH-675/splitly"
+},
   {
     name: "PC Remote Control",
     description:
@@ -310,12 +332,46 @@ export const otherProject = [
 ];
 
 const experiences = [
+{
+  "title": "Co-Founder",
+  "company_name": "GreedUp",
+  "date": "May 2026 - Present",
+  "link": "https://www.linkedin.com/in/divyansh-gupta-b4396a207/",
+  "linkLabel": "LinkedIn experience",
+  "points": [
+    "Co-founded a product engineering studio with Jigyasu Patel and Nishant Nischal.",
+    "Lead generative AI and platform engineering across AI systems, voice agents, and cloud infrastructure."
+  ]
+},
+{
+  "title": "Machine Learning Engineer",
+  "company_name": "Shipd by Datacurve (YC W24)",
+  "date": "Mar 2026 - Present \u00b7 Part-time \u00b7 Remote",
+  "link": "https://www.linkedin.com/in/divyansh-gupta-b4396a207/",
+  "linkLabel": "LinkedIn experience",
+  "points": [
+    "Worked on 500+ challenges across machine learning, computer vision, NLP, and data science.",
+    "Built and improved end-to-end Python solutions: explored data, trained models, compared approaches, validated performance, and prepared submissions.",
+    "Received 30+ Gold awards and 70+ medals for challenge performance."
+  ]
+},
+{
+  "title": "Generalist",
+  "company_name": "Alrium Hybrid",
+  "date": "Mar 2026 - May 2026 \u00b7 Full-time",
+  "link": "https://www.linkedin.com/in/divyansh-gupta-b4396a207/",
+  "linkLabel": "LinkedIn experience",
+  "points": [
+    "Co-built Angela, a multi-channel AI sales agent deployed for clients to handle live voice and chat conversations and qualify inbound leads.",
+    "Engineered tool calling, dialogue state, and HubSpot CRM read/write flows to retrieve account history and record conversation outcomes."
+  ]
+},
   {
     title: "AI Intern",
     company_name: "HumanizeIQ",
     icon: humanizeiqLogo,
     iconBg: "#ffffff",
-    date: "Jan 2026 - Present",
+    date: "Jan 2026 - Apr 2026",
     link: "",
     points: [
       "Generative AI Integration: Integrated Gemini AI models into the Secure Chat app, enabling real-time messaging and creative features like Brainstorming and Diagramming modes.",
@@ -372,3 +428,111 @@ const educations = [
 ];
 
 export { list, profiles, technologies, experiences, educations, achievements };
+
+export const researchProjects = [
+  {
+    "name": "RiskWeave",
+    "description": "Combines risk signals using fuzzy-capacity aggregation on small navigation tasks, with seeded evaluation and documented limitations.",
+    "status": "Research prototype",
+    "tags": [
+      {
+        "name": "Python",
+        "color": "blue-text-gradient"
+      },
+      {
+        "name": "PyTorch",
+        "color": "green-text-gradient"
+      },
+      {
+        "name": "Constrained RL",
+        "color": "pink-text-gradient"
+      }
+    ],
+    "image": "/project/riskweave.svg",
+    "source_code_link": "https://github.com/DIVYANSH-675/RiskWeave"
+  },
+  {
+    "name": "AstroBridge",
+    "description": "Explores conditional Brownian bridges for synthetic inverse imaging, with residual training and ensemble uncertainty diagnostics.",
+    "status": "Research prototype",
+    "tags": [
+      {
+        "name": "Python",
+        "color": "blue-text-gradient"
+      },
+      {
+        "name": "PyTorch",
+        "color": "green-text-gradient"
+      },
+      {
+        "name": "Inverse imaging",
+        "color": "pink-text-gradient"
+      }
+    ],
+    "image": "/project/astrobridge.svg",
+    "source_code_link": "https://github.com/DIVYANSH-675/AstroBridge"
+  },
+  {
+    "name": "MoleculeMask",
+    "description": "Reconstructs masked 3D coordinates and predicts scalar properties on synthetic geometry, with equivariance checks and baseline evaluation.",
+    "status": "Research prototype",
+    "tags": [
+      {
+        "name": "Python",
+        "color": "blue-text-gradient"
+      },
+      {
+        "name": "PyTorch",
+        "color": "green-text-gradient"
+      },
+      {
+        "name": "Geometric learning",
+        "color": "pink-text-gradient"
+      }
+    ],
+    "image": "/project/moleculemask.svg",
+    "source_code_link": "https://github.com/DIVYANSH-675/MoleculeMask"
+  },
+  {
+    "name": "WeightScope",
+    "description": "Studies invariant Transformer-weight features for checkpoint-quality prediction using grouped evaluation and simple comparison baselines.",
+    "status": "Research prototype",
+    "tags": [
+      {
+        "name": "Python",
+        "color": "blue-text-gradient"
+      },
+      {
+        "name": "PyTorch",
+        "color": "green-text-gradient"
+      },
+      {
+        "name": "Model analysis",
+        "color": "pink-text-gradient"
+      }
+    ],
+    "image": "/project/weightscope.svg",
+    "source_code_link": "https://github.com/DIVYANSH-675/WeightScope"
+  },
+  {
+    "name": "AdaptiveSolve",
+    "description": "Routes arithmetic problems between direct answers and bounded programs, with inspectable execution and repair traces.",
+    "status": "Research prototype",
+    "tags": [
+      {
+        "name": "Python",
+        "color": "blue-text-gradient"
+      },
+      {
+        "name": "Program interpretation",
+        "color": "green-text-gradient"
+      },
+      {
+        "name": "Evaluation",
+        "color": "pink-text-gradient"
+      }
+    ],
+    "image": "/project/adaptivesolve.svg",
+    "source_code_link": "https://github.com/DIVYANSH-675/AdaptiveSolve"
+  }
+];

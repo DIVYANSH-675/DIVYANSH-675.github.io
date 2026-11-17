@@ -19,5 +19,5 @@ export default defineConfig(({ mode }) => ({
   build: {
     chunkSizeWarningLimit: 100000000,
   },
-  base: mode === "production" ? "/divyansh-portfolio/" : "/",
+  base: "/",
 }))

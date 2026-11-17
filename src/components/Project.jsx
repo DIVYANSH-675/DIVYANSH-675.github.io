@@ -8,7 +8,7 @@ import { demo } from "../assets";
 import { SectionWrapper } from "../hoc";
 import { list } from "../constants"
 import { fadeIn, textVariant } from "../utils/motion";
-import { aiProject, webProject, otherProject } from "../constants";
+import { aiProject, webProject, otherProject, researchProjects } from "../constants";
 import ProjectList from "./ProjectList";
 import "./Project.scss";
 
@@ -21,6 +21,7 @@ const ProjectCard = ({
   image,
   source_code_link,
   source_link,
+  status,
 }) => {
   return (
     <motion.div whileInView={{ opacity: 1, transform: 'none' }} variants={fadeIn("up", "spring", index * 0.5, 0.75)} className='w-full h-full project-card'>
@@ -35,13 +36,15 @@ const ProjectCard = ({
         <div className='Box1 relative w-full h-[170px]'>
           <img
             src={image}
-            alt='project_image'
+            alt={`${name} project illustration`}
+            loading='lazy'
             className='image w-full h-full object-cover rounded-2xl'
           />
 
           <div className='title absolute inset-0 flex justify-end card-img_hover'>
-            <div
-              onClick={() => window.open(source_link, "_blank")}
+            {source_link && source_link !== source_code_link && <a
+              href={source_link} target='_blank' rel='noopener noreferrer'
+              aria-label={`Open ${name}`}
               className='black-gradient w-10 h-10 m-2 rounded-full flex justify-center items-center cursor-pointer'
             >
               <img
@@ -49,9 +52,10 @@ const ProjectCard = ({
                 alt='demo'
                 className='w-1/2 h-1/2 object-contain'
               />
-            </div>
-            <div
-              onClick={() => window.open(source_code_link, "_blank")}
+            </a>}
+            <a
+              href={source_code_link} target='_blank' rel='noopener noreferrer'
+              aria-label={`View ${name} source code`}
               className='black-gradient w-10 h-10 m-2 rounded-full flex justify-center items-center cursor-pointer'
             >
               <img
@@ -59,12 +63,13 @@ const ProjectCard = ({
                 alt='source code'
                 className='w-1/2 h-1/2 object-contain'
               />
-            </div>
+            </a>
           </div>
         </div>
 
         <div className='content mt-3'>
           <h3 className='text-white font-bold text-[20px]'>{name}</h3>
+          {status && <p className='mt-1 text-[12px] text-cyan-200'>{status}</p>}
           <p className='mt-2 text-secondary text-[14px]' style={{ textAlign: 'justify' }}>{description}</p>
         </div>
 
@@ -79,11 +84,14 @@ const ProjectCard = ({
 };
 const Project = () => {
 
-  const [selected, setSelected] = useState("ai_ml");
+  const [selected, setSelected] = useState("research");
   const [data, setData] = useState([]);
 
   useEffect(() => {
     switch (selected) {
+      case "research":
+        setData(researchProjects);
+        break;
       case "ai_ml":
         setData(aiProject);
         break;

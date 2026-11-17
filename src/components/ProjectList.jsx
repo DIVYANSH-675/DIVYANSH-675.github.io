@@ -4,8 +4,8 @@ import "./ProjectList.scss";
 export default function ProjectList({title,active,setSelected,id}) {
   
     return (
-        <li className={active ? "portfoliolist active" : "portfoliolist"} id="portfoliolist" onClick={() => setSelected(id)}>
-        {title}
+        <li>
+        <button type="button" className={active ? "portfoliolist active" : "portfoliolist"} aria-pressed={active} onClick={() => setSelected(id)}>{title}</button>
       </li>
     )
 }

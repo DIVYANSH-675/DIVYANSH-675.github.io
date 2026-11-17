@@ -20,8 +20,8 @@ const Hero = () => {
     init(textRef.current, {
       showCursor: true,
       strings: [
-        " AI/ML Engineer ",
-        " Generative AI Specialist ",
+        " ML Engineer at Shipd ",
+        " Co-Founder at GreedUp ",
         " Software Developer ",
         " Competitive Programmer ",
       ],

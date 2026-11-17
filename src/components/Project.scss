@@ -19,6 +19,8 @@ $maincolor: rgb(3, 3, 37);
         padding: 0;
         list-style: none;
         display: flex;
+        flex-wrap: wrap;
+        gap: 0.75rem;
         justify-content: center;
 
         li {
@@ -35,7 +37,7 @@ $maincolor: rgb(3, 3, 37);
         }
 
         .title {
-            opacity: 0;
+            opacity: 1;
         }
 
         &:hover {
@@ -100,4 +102,10 @@ $maincolor: rgb(3, 3, 37);
         letter-spacing: 0.3px;
     }
 
+}
+
+.project a:focus-visible,
+.project button:focus-visible {
+    outline: 2px solid #67e8f9;
+    outline-offset: 4px;
 }

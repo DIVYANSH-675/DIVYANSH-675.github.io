@@ -24,11 +24,11 @@ const ExperienceCard = ({ experience }) => {
       iconStyle={{ background: experience.iconBg || "#ffffff" }}
       icon={
         <div className='flex justify-center items-center w-full h-full bg-white rounded-full overflow-hidden'>
-          <img
+          {experience.icon ? <img
             src={experience.icon}
             alt={experience.company_name}
             className='w-full h-full object-contain'
-          />
+          /> : <span className='text-slate-900 font-bold text-2xl'>{experience.company_name.slice(0, 1)}</span>}
         </div>
       }
     >
@@ -51,10 +51,10 @@ const ExperienceCard = ({ experience }) => {
             {point}
           </li>
         ))}
-          <a href={experience.link} className="align-center flex justify-center blue-text-gradient" target="_blank">
-            LINK
-          </a>
       </ul>
+      {experience.link && <a href={experience.link} className="mt-5 inline-block text-cyan-200" target="_blank" rel="noopener noreferrer">
+        {experience.linkLabel || "View experience"} ↗
+      </a>}
     </VerticalTimelineElement>
   );
 };
