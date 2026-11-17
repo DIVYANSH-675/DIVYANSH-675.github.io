@@ -71,7 +71,7 @@ const Hero = () => {
           </div>
         </div>
         <div className="imgcontainer1 absolute violet-gradient">
-          <img src={profilePhoto} alt="" className="object-contain" />
+          <img src={profilePhoto} alt="Geometric 3D portrait of Divyansh Gupta" className="object-contain" />
         </div>
       </div>
 
