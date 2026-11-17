@@ -26,8 +26,8 @@ const ExperienceCard = ({ experience }) => {
         <div className='flex justify-center items-center w-full h-full bg-white rounded-full overflow-hidden'>
           {experience.icon ? <img
             src={experience.icon}
-            alt={experience.company_name}
-            className='w-full h-full object-contain'
+            alt={`${experience.company_name} logo`}
+            className={experience.iconClassName || 'w-full h-full object-contain'}
           /> : <span className='text-slate-900 font-bold text-2xl'>{experience.company_name.slice(0, 1)}</span>}
         </div>
       }

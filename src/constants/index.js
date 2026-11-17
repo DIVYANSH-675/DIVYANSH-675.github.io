@@ -335,6 +335,8 @@ const experiences = [
 {
   "title": "Co-Founder",
   "company_name": "GreedUp",
+  "icon": "/companies/greedup.png",
+  "iconClassName": "w-[78%] h-[78%] object-contain",
   "date": "May 2026 - Present",
   "link": "https://www.linkedin.com/in/divyansh-gupta-b4396a207/",
   "linkLabel": "LinkedIn experience",
@@ -346,6 +348,8 @@ const experiences = [
 {
   "title": "Machine Learning Engineer",
   "company_name": "Shipd by Datacurve (YC W24)",
+  "icon": "/companies/shipd.jpeg",
+  "iconClassName": "w-[78%] h-[78%] object-contain",
   "date": "Mar 2026 - Present \u00b7 Part-time \u00b7 Remote",
   "link": "https://www.linkedin.com/in/divyansh-gupta-b4396a207/",
   "linkLabel": "LinkedIn experience",
@@ -358,6 +362,8 @@ const experiences = [
 {
   "title": "Generalist",
   "company_name": "Alrium Hybrid",
+  "icon": "/companies/alrium.jpeg",
+  "iconClassName": "w-[78%] h-[78%] object-contain",
   "date": "Mar 2026 - May 2026 \u00b7 Full-time",
   "link": "https://www.linkedin.com/in/divyansh-gupta-b4396a207/",
   "linkLabel": "LinkedIn experience",
